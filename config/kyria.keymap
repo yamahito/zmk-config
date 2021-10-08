@@ -55,7 +55,7 @@
 			bindings = <
 	&trans		&kp N1		&kp Q	   &kp J	  &kp E	 &trans									&trans	   &kp HOME	  &trans	 &kp PG_UP	&kp C_VOL_UP	&kp C_PREV
 	&trans		&kp N2		&kp A	   &kp W	  &kp D	 &trans									&trans	   &kp LEFT	  &kp UP	 &kp RIGHT	&kp K_MUTE		&kp C_PP
-	&trans		&kp N3		&kp Z	   &kp S	  &kp X	 &trans	&trans &trans	&trans &trans	&trans	   &kp END	  &ksp DOWN	 &kp PG_DN	&kp C_VOL_DN	&kp C_NEXT
+	&trans		&kp N3		&kp Z	   &kp S	  &kp X	 &trans	&trans &trans	&trans &trans	&trans	   &kp END	  &kp DOWN	 &kp PG_DN	&kp C_VOL_DN	&kp C_NEXT
 					&trans &trans &trans &trans &trans 							&trans &trans &trans &trans &trans 
 			>;
 		};
