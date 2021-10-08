@@ -47,14 +47,14 @@
 		gaming_layer {
 // . means trans!
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  .  |   .   |   .   |   .   |   .   |   .   |                               |   .   |   .   |   .   |   .  |   .   |  .  |
-// |  .  |   .   |   .   |   .   |   .   |   .   |                               |   .   |   .   |   .   |   .  |   .   |  .  |
-// |  .  |   .   |   .   |   .   |   .   |   .   |  .  | .  |       |  .  |  .   |   .   |   .   |   .   |   .  |   .   |  .  |
+// |  .  |   1   |   Q   |   J   |   E   |   .   |                               |   .   |   .   |   .   |   .  |   .   |  .  |
+// |  .  |   2   |   A   |   W   |   D   |   .   |                               |   .   |  LEFT |   UP  | RIGHT|   .   |  .  |
+// |  .  |   3   |   Z   |   S   |   X   |   .   |  .  | .  |       |  .  |  .   |   .   |   .   |  DOWN |   .  |   .   |  .  |
 //                       |   .   |   .   |   .   |  .  | .  |       |  .  |  .   |   .   |   .   |   .   |
 			bindings = <
-	&trans		&trans		&trans	   &trans	  &trans	 &trans						&trans	   &trans	  &trans	 &trans		&trans	   &trans
-	&trans		&trans		&trans	   &trans	  &trans	 &trans						&trans	   &trans	  &trans	 &trans		&trans	   &trans
-	&trans		&trans		&trans	   &trans	  &trans	 &trans	&trans &trans		&trans	   &trans	  &trans	 &trans		&trans	   &trans	&trans	&trans 
+	&trans		&kp N1		&kp Q	   &kp J	  &kp E	 &trans						&trans	   &trans	  &trans	 &trans		&trans	   &trans
+	&trans		&kp N2		&kp A	   &kp W	  &kp D	 &trans						&trans	   &kp LEFT	  &kp UP	 &kp RIGHT		&trans	   &trans
+	&trans		&kp N3		&kp Z	   &kp S	  &kp X	 &trans	&trans &trans		&trans	   &trans	  &ksp DOWN	 &trans		&trans	   &trans	&trans	&trans 
 					&trans &trans &trans &trans &trans 							&trans &trans &trans &trans &trans 
 			>;
 		};
