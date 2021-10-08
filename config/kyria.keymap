@@ -12,6 +12,7 @@
 #define DEFAULT 0
 #define NUMBERS 1
 #define GAMING  2
+#define NAVI    3
 
 / {
 	keymap {
@@ -24,7 +25,7 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  EP_TOG | L SHIFT |  |  BT_PRV |  BT_NXT |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //                     | CTRL | ALT  | CMD  |  SPACE  |   NUM   |  |   RET   |  SPACE  | NUM  | ALT   | CTRL  |
 			bindings = <
-	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BKSP
+	&lt NAVI ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BKSP
 	&mt LCTRL TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &ext_power EP_TOG &kp LSHFT   &bt BT_PRV &bt BT_NXT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                 &kp LCTRL &kp LALT &kp LCMD &kp SPACE &mo NUMBERS    &kp RET  &kp SPACE  &mo NUMBERS &kp RALT &kp RCTRL
@@ -47,15 +48,29 @@
 		gaming_layer {
 // . means trans!
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  .  |   1   |   Q   |   J   |   E   |   .   |                               |   .   |   .   |   .   |   .  |   .   |  .  |
-// |  .  |   2   |   A   |   W   |   D   |   .   |                               |   .   |  LEFT |   UP  | RIGHT|   .   |  .  |
-// |  .  |   3   |   Z   |   S   |   X   |   .   |  .  | .  |       |  .  |  .   |   .   |   .   |  DOWN |   .  |   .   |  .  |
-//                       |   .   |   .   |   .   |  .  | .  |       |  .  |  .   |   .   |   .   |   .   |
+// |  .  |   1   |   Q   |   J   |   E   |   .   |                               |   .   |  HOME  |   .    | PG_UP | C_VOL_UP | C_PREV |
+// |  .  |   2   |   A   |   W   |   D   |   .   |                               |   .   |  LEFT  |   UP   | RIGHT |  K_MUTE  | C_PP   |
+// |  .  |   3   |   Z   |   S   |   X   |   .   |  .  | .  |       |  .  |  .   |   .   |  END   |  DOWN  | PG_DN | C_VOL_DN | C_NEXT |
+//                       |   .   |   .   |   .   |  .  | .  |       |  .  |  .   |   .   |   .    |   .    |
 			bindings = <
-	&trans		&kp N1		&kp Q	   &kp J	  &kp E	 &trans						&trans	   &trans	  &trans	 &trans		&trans	   &trans
-	&trans		&kp N2		&kp A	   &kp W	  &kp D	 &trans						&trans	   &kp LEFT	  &kp UP	 &kp RIGHT		&trans	   &trans
-	&trans		&kp N3		&kp Z	   &kp S	  &kp X	 &trans	&trans &trans		&trans	   &trans	  &ksp DOWN	 &trans		&trans	   &trans	&trans	&trans 
+	&trans		&kp N1		&kp Q	   &kp J	  &kp E	 &trans									&trans	   &kp HOME	  &trans	 &kp PG_UP	&kp C_VOL_UP	&kp C_PREV
+	&trans		&kp N2		&kp A	   &kp W	  &kp D	 &trans									&trans	   &kp LEFT	  &kp UP	 &kp RIGHT	&kp K_MUTE		&kp C_PP
+	&trans		&kp N3		&kp Z	   &kp S	  &kp X	 &trans	&trans &trans	&trans &trans	&trans	   &kp END	  &ksp DOWN	 &kp PG_DN	&kp C_VOL_DN	&kp C_NEXT
 					&trans &trans &trans &trans &trans 							&trans &trans &trans &trans &trans 
+			>;
+		};
+		navi_layer {
+// . means trans!
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  .  |   .   |   .   |   .   |   .   |   .   |                               |   .   |   .   |   .   |   .  |   .   |  .  |
+// |  .  |DEFAULT|   .   |DEFAULT|   .   |GAMING |                               |   .   | GAMING| GAMING|GAMING|   .   |  .  |
+// |  .  |   .   |   .   |   .   |   .   |   .   |  .  | .  |       |  .  |  .   |   .   |   .   | GAMING|   .  |   .   |  .  |
+//                       |   .   |   .   |   .   |  D  | .  |       |  .  |  D   |   .   |   .   |   .   |
+			bindings = <
+	&trans		&trans		&trans	   &trans	  &trans	 &trans						&trans	   &trans	  &trans	 &trans		&trans	   &trans
+	&trans		&to DEFAULT	&trans	   &to DEFAULT &trans	 &to GAMING					&trans	   &to GAMING &to GAMING &to GAMING	&trans	   &trans
+	&trans		&trans		&trans	   &trans	  &trans	 &trans	&trans &trans		&trans	   &trans	  &to GAMING &trans		&trans	   &trans	&trans	&trans 
+					&trans &trans &trans &to DEFAULT &trans 							&trans &to DEFAULT &trans &trans &trans 
 			>;
 		};
 	};
