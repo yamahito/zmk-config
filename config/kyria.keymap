@@ -24,7 +24,7 @@
 //                     | CTRL | ALT  | CMD  |  SPACE  |   NUM   |  |   RET   |  SPACE  | NUM  | ALT   | CTRL  |
 			bindings = <
 	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BKSP
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&mt LCTRL TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &ext_power EP_TOG &kp LSHFT   &bt BT_PRV &bt BT_NXT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                 &kp LCTRL &kp LALT &kp LCMD &kp SPACE &mo NUMBERS    &kp RET  &kp SPACE  &mo NUMBERS &kp RALT &kp RCTRL
 			>;
@@ -32,13 +32,13 @@
 		numbers_layer {
 // . means trans!
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  `  |   !   |   @   |   £   |   $   |   %   |                               |   ^   |   &   |   *   |   (  |   )   |  =  |
-// |  .  |   1   |   2   |   3   |   4   |   5   |                               |   6   |   7   |   8   |   9  |   0   |  -  |
+// |  `  |   !   |   @   |   £   |   $   |   %   |                               |   ^   |   &   |   *   |   (  |   )   |  -  |
+// |  .  |   1   |   2   |   3   |   4   |   5   |                               |   6   |   7   |   8   |   9  |   0   |  =  |
 // |  .  |   ¡   |   €   |   #   |   ¢   |   .   |  .  | .  |       |  .  |  .   |   {   |   }   |   [   |   ]  |   \   |  .  |
 //                       |   .   |   .   |   .   |  .  | .  |       |  .  |  .   |   .   |   .   |   .   |
 			bindings = <
-	&kp GRAVE	&kp LS(N1)	&kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)					&kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0) &kp EQUAL
-	&trans		&kp N1		&kp N2	   &kp N3	  &kp N4	 &kp N5						&kp N6	   &kp N7	  &kp N8	 &kp N9		&kp N0	   &kp MINUS
+	&kp GRAVE	&kp LS(N1)	&kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)					&kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0) &kp MINUS
+	&trans		&kp N1		&kp N2	   &kp N3	  &kp N4	 &kp N5						&kp N6	   &kp N7	  &kp N8	 &kp N9		&kp N0	   &kp EQUAL
 	&trans		&kp LA(N1)	&kp LA(N2) &kp LA(N3) &kp LA(N4) &kp LA(N5) &trans &trans 	&trans &trans &kp LBRC &kp RBRC &kp LBKT &kp RBKT &kp BSLH &trans 
 					&trans &trans &trans &trans &trans 							&trans &trans &trans &trans &trans 
 			>;
