@@ -12,6 +12,7 @@
 #define DEFAULT 0
 #define NUMBERS 1
 #define GAMING  2
+#define ARROWS  2
 #define NAVI    3
 
 / {
@@ -28,7 +29,7 @@
 	&lt NAVI ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BKSP
 	&mt LCTRL TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &ext_power EP_TOG &kp LSHFT   &bt BT_PRV &bt BT_NXT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-	                 &kp LCTRL &kp LALT &kp LCMD &kp SPACE &mo NUMBERS    &kp RET  &kp SPACE  &mo NUMBERS &kp RALT &kp RCTRL
+	                 &kp LCTRL &kp LALT &kp LCMD &mt GAMING SPACE &mt RET NUMBERS    &mt RET NUMBERS &kp SPACE  &mo NUMBERS &kp RALT &kp RCTRL
 			>;
 		};
 		numbers_layer {
@@ -43,6 +44,7 @@
 	&trans		&kp N1		&kp N2	   &kp N3	  &kp N4	 &kp N5						&kp N6	   &kp N7	  &kp N8	 &kp N9		&kp N0	   &kp EQUAL
 	&trans		&kp LA(N1)	&kp LA(N2) &kp LA(N3) &kp LA(N4) &kp LA(N5) &trans &trans 	&trans &trans &kp LBRC &kp RBRC &kp LBKT &kp RBKT &kp BSLH &trans 
 					&trans &trans &trans &trans &trans 							&trans &trans &trans &trans &trans 
+
 			>;
 		};
 		gaming_layer {
