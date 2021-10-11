@@ -29,7 +29,7 @@
 	&lt NAVI ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BKSP
 	&mt LCTRL TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &ext_power EP_TOG &kp LSHFT   &bt BT_PRV &bt BT_NXT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-	                 &kp LCTRL &kp LALT &kp LCMD &mt GAMING SPACE &mt NUMBERS RET    &mt NUMBERS RET &kp SPACE  &mo NUMBERS &kp RALT &kp RCTRL
+	                 &kp LCTRL &kp LALT &kp LCMD &lt ARROWS SPACE &lt NUMBERS RET    &lt NUMBERS RET &kp SPACE  &mo NUMBERS &kp RALT &kp RCTRL
 			>;
 		};
 		numbers_layer {
