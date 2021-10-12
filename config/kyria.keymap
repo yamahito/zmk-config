@@ -50,26 +50,26 @@
 		gaming_layer {
 // . means trans!
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  .  |   1   |   Q   |   J   |   E   |   .   |                               |   .   |  HOME  |   .    | PG_UP | C_VOL_UP | C_PREV |
+// |  .  |   1   |   Q   |   J   |   E   |   .   |                               |   .   |  HOME  |   .    | PG_UP | C_VOL_UP | C_NEXT |
 // |  .  |   2   |   A   |   W   |   D   |   .   |                               |   .   |  LEFT  |   UP   | RIGHT |  K_MUTE  | C_PP   |
-// |  .  |   3   |   Z   |   S   |   X   |   .   |  .  | .  |       |  .  |  .   |   .   |  END   |  DOWN  | PG_DN | C_VOL_DN | C_NEXT |
+// |  .  |   3   |   Z   |   S   |   X   |   .   |  .  | .  |       |  .  |  .   |   .   |  END   |  DOWN  | PG_DN | C_VOL_DN | C_PREV |
 //                       |   .   |   .   |   .   |  .  | .  |       |  .  |  .   |   .   |   .    |   .    |
 			bindings = <
-	&trans		&kp N1		&kp Q	   &kp J	  &kp E	 &trans									&trans	   &kp HOME	  &trans	 &kp PG_UP	&kp C_VOL_UP	&kp C_PREV
+	&trans		&kp N1		&kp Q	   &kp J	  &kp E	 &trans									&trans	   &kp HOME	  &trans	 &kp PG_UP	&kp C_VOL_UP	&kp C_NEXT
 	&trans		&kp N2		&kp A	   &kp W	  &kp D	 &trans									&trans	   &kp LEFT	  &kp UP	 &kp RIGHT	&kp K_MUTE		&kp C_PP
-	&trans		&kp N3		&kp Z	   &kp S	  &kp X	 &trans	&trans &trans	&trans &trans	&trans	   &kp END	  &kp DOWN	 &kp PG_DN	&kp C_VOL_DN	&kp C_NEXT
+	&trans		&kp N3		&kp Z	   &kp S	  &kp X	 &trans	&trans &trans	&trans &trans	&trans	   &kp END	  &kp DOWN	 &kp PG_DN	&kp C_VOL_DN	&kp C_PREV
 					&trans &trans &trans &trans &trans 							&trans &trans &trans &trans &trans 
 			>;
 		};
 		navi_layer {
 // . means trans!
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  .  |   .   |   .   |   .   |   .   |   .   |                               |   .   |   .   |   .   |   .  |   .   |  .  |
-// |  .  |DEFAULT|   .   |DEFAULT|   .   |GAMING |                               |   .   | GAMING| GAMING|GAMING|   .   |  .  |
-// |  .  |   .   |   .   |   .   |   .   |   .   |  .  | .  |       |  .  |  .   |   .   |   .   | GAMING|   .  |   .   |  .  |
+// |  .  |DEFAULT|NUMBERS| ARROWS|   .   |   .   |                               |   .   |   .   |   .   |   .  |   .   |OUT_BLE|
+// |  .  |DEFAULT|   .   |DEFAULT|   .   |GAMING |                               |   .   | GAMING| GAMING|GAMING|   .   |   .   |
+// |  .  |   .   |   .   |   .   |   .   |   .   |  .  | .  |       |  .  |  .   |   .   |   .   | GAMING|   .  |   .   |   .   |
 //                       |   .   |   .   |   .   |  D  | .  |       |  .  |  D   |   .   |   .   |   .   |
 			bindings = <
-	&trans		&trans		&trans	   &trans	  &trans	 &trans						&trans	   &trans	  &trans	 &trans		&trans	   &trans
+	&trans		&to DEFAULT	&to NUMBERS &to ARROWS &trans	 &trans						&trans	   &trans	  &trans	 &trans		&trans	   &out OUT_BLE
 	&trans		&to DEFAULT	&trans	   &to DEFAULT &trans	 &to GAMING					&trans	   &to GAMING &to GAMING &to GAMING	&trans	   &trans
 	&trans		&trans		&trans	   &trans	  &trans	 &trans	&trans &trans		&trans	   &trans	  &to GAMING &trans		&trans	   &trans	&trans	&trans 
 					&trans &trans &trans &to DEFAULT &trans 							&trans &to DEFAULT &trans &trans &trans 
