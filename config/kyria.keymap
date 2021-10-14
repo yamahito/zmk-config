@@ -24,12 +24,12 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   | BKSP  |
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  EP_TOG | L SHIFT |  |  BT_PRV |  BT_NXT |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  EP_ON  | L SHIFT |  |  BT_PRV |  BT_NXT |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //                     | CTRL | ALT  | CMD  |  SPACE  |   NUM   |  |   RET   |  SPACE  | NUM  | ALT   | CTRL  |
 			bindings = <
 	&lt NAVI ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BKSP
 	&mt LCTRL TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &ext_power EP_TOG &kp LSHFT   &bt BT_PRV &bt BT_NXT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &ext_power EP_ON &kp LSHFT   &bt BT_PRV &bt BT_NXT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                 &kp LCTRL &kp LALT &kp LCMD &lt ARROWS SPACE &lt NUMBERS RET    &lt NUMBERS RET &kp SPACE  &mo NUMBERS &kp RALT &kp RCTRL
 			>;
 		};
