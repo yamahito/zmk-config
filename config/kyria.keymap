@@ -30,7 +30,7 @@
 	&lt NAVI ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BKSP
 	&mt LCTRL TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &bt BT_SEL 0 &bt BT_PRV		&bt BT_NXT &bt BT_SEL 1 &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-	                 &kp LCTRL &kp LALT &kp LCMD &lt ARROWS SPACE &lt NUMBERS RET    &lt NUMBERS RET &lt ARROWS SPACE  &mo NUMBERS &kp RALT &kp RCTRL
+	                 &kp LCTRL &kp LALT &kp LCMD &lt ARROWS SPACE &lt NUMBERS RET    &lt NUMBERS RET &lt ARROWS SPACE  &kp RCMD &kp RALT &kp RCTRL
 			>;
 		};
 		numbers_layer {
@@ -59,7 +59,7 @@
 	&trans		&kp N1		&kp Q	   &kp J	  &kp E	 &trans									&trans	   &kp HOME	  &trans	 &kp PG_UP	&kp C_VOL_UP	&kp C_NEXT
 	&trans		&kp N2		&kp A	   &kp W	  &kp D	 &trans									&trans	   &kp LEFT	  &kp UP	 &kp RIGHT	&kp K_MUTE		&kp C_PP
 	&trans		&kp N3		&kp Z	   &kp S	  &kp X	 &trans	&trans &trans	&trans &trans	&trans	   &kp END	  &kp DOWN	 &kp PG_DN	&kp C_VOL_DN	&kp C_PREV
-					&trans &trans &trans &trans &trans 							&trans &trans &trans &trans &trans 
+					&trans &trans &trans &kp SPACE &kp RET 							&kp RET &kp SPACE &trans &trans &trans 
 			>;
 		};
 		navi_layer {
