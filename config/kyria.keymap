@@ -20,7 +20,6 @@
 	behaviors {
 		htcw: hold_tap_caps_word {
 			compatible = "zmk,behavior-hold-tap";
-			label = "HOLD_TAP_CAPS_WORD";
 			#binding-cells = <2>;	
 			flavor = "hold-preferred";
 			bindings = <&kp>, <&caps_word>;
@@ -38,7 +37,7 @@
 			bindings = <
 	&lt NAVI ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BKSP
 	&mt LCTRL TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&mt LSHFT CAPS &kp Z &kp X &kp C &kp V &kp B &bt BT_SEL 0 &bt BT_PRV		&bt BT_NXT &bt BT_SEL 1 &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &htcw RSHFT 0
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &bt BT_SEL 0 &bt BT_PRV		&bt BT_NXT &bt BT_SEL 1 &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &htcw RSHFT 0
 	                 &kp LCTRL &kp LALT &kp LCMD &lt ARROWS SPACE &lt NUMBERS RET    &lt NUMBERS RET &lt ARROWS SPACE  &kp RCMD &kp RALT &kp RCTRL
 			>;
 		};
