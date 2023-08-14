@@ -20,6 +20,7 @@
 	behaviors {
 		htcw: hold_tap_caps_word {
 			compatible = "zmk,behavior-hold-tap";
+			label = "HOLD_TAP_CAPS_WORD";
 			#binding-cells = <2>;	
 			flavor = "hold-preferred";
 			bindings = <&kp>, <&caps_word>;
