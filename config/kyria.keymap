@@ -27,10 +27,10 @@
 			bindings = <&kp>, <&caps_word>;
 		};
 		tdcl: tap_dance_caps_lock {
-			compatible = "zmk, behavior-tap-dance";
+			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp LSHIFT>, <&kp CAPSLOCK>; 
+			bindings = <&kp LSHIFT>, <&kp CAPS>; 
 		};
 	};
 	keymap {
