@@ -29,7 +29,6 @@
 		};
 		tdcl: tap_dance_caps_lock {
 			compatible = "zmk, behavior-tap-dance";
-			label = "TAP_DANCE_CAPS_LOCK";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp LSHIFT>, <&kp CAPSLOCK>; 
