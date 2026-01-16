@@ -86,7 +86,7 @@
 // |  .  |   .   |   .   |   .   |   .   |   .   |  .  | BT_CLR |  | EP_OFF| EP_ON |   .   |   .   | GAMING|   .  |   .   |   .   |
 //                       |   .   |   .   |   .   |  D  | .  |      |   .   |   D   |   .   |   .   |   .   |
 			bindings = <
-	&trans		&to DEFAULT	&to NUMBERS &to ARROWS &trans	 &trans						&trans	   &trans	  &trans	 &trans		&trans	   &out OUT_BLE
+	&trans		&to DEFAULT	&to NUMBERS &to ARROWS &trans	 &trans						&trans	   &trans	  &trans	 &trans		&trans	   &out OUT_TOG
 	&trans		&to DEFAULT	&trans	   &to DEFAULT &trans	 &to GAMING					&trans	   &to GAMING &to GAMING &to GAMING	&trans	   &trans
 	&trans		&trans		&trans	   &trans	  &trans	 &trans	&trans &bt BT_CLR	&ext_power EP_OFF  &ext_power EP_ON &trans	 &trans		&to GAMING	   &trans	&trans	&trans 
 					&trans &trans &trans &to DEFAULT &trans 							&trans &to DEFAULT &trans &trans &trans 
